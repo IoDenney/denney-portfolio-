@@ -3,41 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denney Thongphet's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            margin-top: 20px;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-        }
-        img {
-            width: 300px;
-            height: auto;
-        }
-    </style>
+    <title>Denney's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Denney Thongphet's Portfolio</h1>
+        <h1>Welcome to Denney's Portfolio</h1>
         <nav>
             <a href="#resume">Resume</a>
             <a href="#gaming-pc">Gaming PC Builds</a>
@@ -45,30 +16,40 @@
         </nav>
     </header>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my <a href="resume.pdf" target="_blank">Resume (PDF)</a></p>
-    </section>
+    <main>
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2>Download My Resume</h2>
+            <a href="resume.pdf" class="btn" download>Download Resume (PDF)</a>
+        </section>
 
-    <section id="gaming-pc">
-        <h2>Gaming PC Builds</h2>
-        <p>Here are some of the gaming PCs I have built:</p>
-        <img src="gaming-pc1.jpg" alt="Gaming PC 1">
-        <img src="gaming-pc2.jpg" alt="Gaming PC 2">
-    </section>
+        <!-- Gaming PC Builds Section -->
+        <section id="gaming-pc">
+            <h2>Gaming PC Builds</h2>
+            <p>Here are some of the custom gaming PCs I have built:</p>
+            <div class="image-gallery">
+                <img src="gaming-pc1.jpg" alt="Gaming PC 1">
+                <img src="gaming-pc2.jpg" alt="Gaming PC 2">
+                <img src="gaming-pc3.jpg" alt="Gaming PC 3">
+            </div>
+        </section>
 
-    <section id="it-docs">
-        <h2>I.T. Documents</h2>
-        <p>Below are some I.T. documents I have written:</p>
-        <ul>
-            <li><a href="it-document1.pdf" target="_blank">Document 1</a></li>
-            <li><a href="it-document2.pdf" target="_blank">Document 2</a></li>
-        </ul>
-    </section>
+        <!-- I.T. Documents Section -->
+        <section id="it-docs">
+            <h2>I.T. Documents</h2>
+            <p>Below are some of the I.T. documents I have written:</p>
+            <ul>
+                <li><a href="it-document1.pdf" target="_blank">Document 1</a></li>
+                <li><a href="it-document2.pdf" target="_blank">Document 2</a></li>
+                <li><a href="it-document3.pdf" target="_blank">Document 3</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>Contact: denneytho@icloud.com</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
